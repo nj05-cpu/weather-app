@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
 import afterNoon from './assets/after_noon.jpg';
 const api= {
-  key: "e9a76a4370682567a18179369703bd53",
-
+  key: "125c6603d6fd6f274e15d00af7abae30",
+ 
   base:"https://api.openweathermap.org/data/2.5/"
 
 };
@@ -46,8 +46,8 @@ return (
     className={
       typeof weather.main !== "undefined"
         ? weather.main.temp < 15
-          ? "app night_app" // 👈 background for cold
-          : "app day_app"   // 👈 background for warm
+          ? "app night_app" // background for cold
+          : "app day_app"   // background for warm
         : "app"
     }
   >
