@@ -1,10 +1,9 @@
 import React,{useState} from 'react';
-import afterNoon from './assets/after_noon.jpg';
-const api= {
-  key: "125c6603d6fd6f274e15d00af7abae30",
- 
-  base:"https://api.openweathermap.org/data/2.5/"
 
+import afterNoon from './assets/after_noon.jpg';
+const api = {
+  key: process.env.REACT_APP_WEATHER_KEY,
+  base: process.env.REACT_APP_WEATHER_BASE
 };
 
 function App() {
